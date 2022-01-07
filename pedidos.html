@@ -1,0 +1,131 @@
+<slide>
+    <p>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputName4">Nombre</label>
+                    <input type="name" class="form-control" id="inputName" placeholder="Nombre">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputLastname4">Apellido</label>
+                    <input type="lastname" class="form-control" id="inputLastname" placeholder="Apellido">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputAddress">Direccion</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Calle 1234 Casa 1234">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label>Producto 1</label>
+                    <select class="form-control" id="inputPedido">
+                        <option value="" selected>Elegir...</option>
+                        <option value="Empanadas">Empanadas</option>
+                        <option value="Pizza">Pizza</option>
+                        <option value="Tartas">Tartas</option>
+                        <option value="Panini">Panini</option>
+                        <option value="Pizzetas">Pizzetas rellenas</option>
+                        <option value="Patitas">Patitas de pollo</option>
+                        <option value="Tostados">Tostados</option>
+                        <option value="Chipa">Chipa</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputPedido1">Producto 2</label>
+                    <select class="form-control" id="inputPedido1">
+                        <option value="" selected>Elegir...</option>
+                        <option value="Empanadas">Empanadas</option>
+                        <option value="Pizza">Pizza</option>
+                        <option value="Tartas">Tartas</option>
+                        <option value="Panini">Panini</option>
+                        <option value="Pizzetas">Pizzetas rellenas</option>
+                        <option value="Patitas">Patitas de pollo</option>
+                        <option value="Tostados">Tostados</option>
+                        <option value="Chipa">Chipa</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputPedido2">Producto 3</label>
+                    <select class="form-control" id="inputPedido2">
+                        <option value="" selected>Elegir...</option>
+                        <option value="Empanadas">Empanadas</option>
+                        <option value="Pizza">Pizza</option>
+                        <option value="Tartas">Tartas</option>
+                        <option value="Panini">Panini</option>
+                        <option value="Pizzetas">Pizzetas rellenas</option>
+                        <option value="Patitas">Patitas de pollo</option>
+                        <option value="Tostados">Tostados</option>
+                        <option value="Chipa">Chipa</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="inputCantidad1">Cantidad producto 1</label>
+                    <input type="text" class="form-control" id="inputCantidad1" placeholder="1">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputCantidad2">Cantidad producto 2</label>
+                    <input type="text" class="form-control" id="inputCantidad2" placeholder="2">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputCantidad3">Cantidad producto 3</label>
+                    <input type="text" class="form-control" id="inputCantidad3" placeholder="3">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="captcha">Captcha:</label>
+                        <input type="text" id="inputText" class="form-control">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="generatedcaptcha" class="text-white">a</label>
+                        <input type="text" class="form-control" id="captcha" disabled />
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="button-captcha" class="text-white">a</label></br>
+                        <button type="button" class="btn btn-primary" id="actucaptcha">Actualizar</button>
+                    </div>
+                    </label>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary" id="realizpedido">Realizar pedido</button><button
+                type="button" class="btn btn-primary" id="tres">x3</button><button type="button" class="btn btn-primary"
+                id="editar">Editar</button>
+        </form>
+    </p>
+    <table id="ultimos-pedidos">
+        <thead>
+            <th>A</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Direccion</th>
+            <th>Producto</th>
+        </thead>
+        <tbody id="pedidos_tabla"></tbody>
+    </table>
+    <br>
+    <div class="form-group">
+        <div class="form-row">
+            <div class="col-md-2"><button type="button" class="btn btn-primary" id="filtrar">Filtrar</button></div>
+            <div class="col-md-4"><select class="form-control" id="inputPedidoF">
+                    <option value="" selected>Elegir...</option>
+                    <option value="Empanadas">Empanadas</option>
+                    <option value="Pizza">Pizza</option>
+                    <option value="Tartas">Tartas</option>
+                    <option value="Panini">Panini</option>
+                    <option value="Pizzetas">Pizzetas rellenas</option>
+                    <option value="Patitas">Patitas de pollo</option>
+                    <option value="Tostados">Tostados</option>
+                    <option value="Chipa">Chipa</option>
+                </select></div>
+            <div class="col-md-4"><button type="button" class="btn btn-primary" id="cancelarfiltro">Cancelar</button>
+            </div>
+            <div class="col-md-2"><button type="button" class="btn btn-primary " id="borrartabla">Eliminar</button></div>
+        </div>
+    </div>
+
+</slide>
+<pedidos></pedidos>
+<productos></productos>
